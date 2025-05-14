@@ -8,5 +8,5 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 COPY . /app/
 WORKDIR /app/
-RUN pip3 install -r requirements.txt
+
 CMD gunicorn app:app & python3 main.py
